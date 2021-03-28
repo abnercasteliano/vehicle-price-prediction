@@ -1,4 +1,6 @@
 from flask import Flask, render_template, request
+import jsonify
+import requests
 import joblib
 import os
 from datetime import date
@@ -26,11 +28,16 @@ def predict():
 
         fuel_type_petrol=request.form['Fuel_Type_Petrol']
         if(fuel_type_petrol=='Petrol'):
-                fuel_type_petrol=1
-                fuel_type_diesel=0
+        	fuel_type_petrol=1
+        	fuel_type_diesel=0
+
+        elif(fuel_type_petrol=='Diesel'):
+        	fuel_type_petrol=0
+        	fuel_type_diesel=1
+
         else:
-            fuel_type_petrol=0
-            fuel_type_diesel=1
+        	fuel_type_petrol=0
+        	fuel_type_diesel=0
 
         seller_type_individual=request.form['Seller_Type_Individual']
         if(seller_type_individual=='Individual'):
