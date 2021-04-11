@@ -18,8 +18,8 @@ Antes de treinar e escolher o melhor modelo preditivo, foi realizada a **normali
 
 ### Treinamento e teste do modelo
 
-Inicialmente os dados de treinamento foram treinados e validados com o algoritmo **Linear Regression**, gerando um score de mais de 70%.
+Inicialmente os dados de treinamento foram treinados e validados com o algoritmo **Linear Regression**, gerando um score de mais de 85%.
 
 Posteriormente, os dados foram treinados e testados com o algoritmo **Random Forest Regressor**. Durante a implementação do modelo foi realizada uma **otimização de hiperparâmetros** através do algoritmo **Random SearchCV**, buscando obter os melhores hiperparâmetros e a máxima performance do Random forest Regressor.
 
-Por fim, concluiu-se que o melhor modelo para este problema é o **Random Forest Regressor**, que obteve um score acima dos 90%.
+Por fim, concluiu-se que o melhor modelo para este problema é o **Random Forest Regressor**, que obteve um score de 87%.
