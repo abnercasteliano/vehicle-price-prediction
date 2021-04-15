@@ -3,16 +3,14 @@ import jsonify
 import requests
 import joblib
 from datetime import date
-from sklearn.preprocessing import StandardScaler
+
+model = joblib.load('RandomFRegressor.pkl')
 
 app = Flask(__name__)
-model = joblib.load('RandomFRegressor.pkl')
 
 @app.route('/', methods=['GET'])
 def home():
     return render_template('index.html')
-
-standard_to = StandardScaler()
 
 @app.route('/predict', methods=['POST'])
 def predict():
