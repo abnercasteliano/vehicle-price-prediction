@@ -14,7 +14,7 @@ Utilizou-se também um HeatMap(mapa de calor) para identificar possíveis correl
 
 ### Divisão dos dados
 
-Antes de treinar e escolher o melhor modelo preditivo, foi realizada a **normalização dos dados** com o intuito de corrigir alguns outliers. Depois de normalizados, os dados foram divididos em teste e treinamento através do método **train_test_split**
+Antes de treinar e escolher o melhor modelo preditivo, foi realizada a **normalização dos dados** com o intuito de corrigir alguns outliers. Depois de normalizados, os dados foram divididos em dados de treinamento e dados de teste através do método **train_test_split**
 
 ### Treinamento e teste do modelo
 
