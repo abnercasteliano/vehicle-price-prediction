@@ -14,11 +14,11 @@ Utilizou-se também um HeatMap(mapa de calor) para identificar possíveis correl
 
 ### Divisão dos dados
 
-Antes de treinar e escolher o melhor modelo preditivo, foi realizada a **normalização dos dados** com o intuito de corrigir alguns outliers. Depois de normalizados, os dados foram divididos em dados de treinamento e dados de teste através do método **train_test_split**
+Antes de treinar e escolher o melhor modelo preditivo, foi realizada a **normalização dos dados** com o intuito de corrigir alguns outliers. Depois de normalizados, os dados foram divididos em dados de treinamento e dados de teste através do método **train_test_split**.
 
 ### Treinamento e teste do modelo
 
-Inicialmente os dados de treinamento foram treinados e validados com o algoritmo **Linear Regression**, gerando um score de mais de 85%.
+Inicialmente os dados foram treinados e validados com o algoritmo **Linear Regression**, gerando um score de mais de 85%.
 
 Posteriormente, os dados foram treinados e testados com o algoritmo **Random Forest Regressor**. Durante a implementação do modelo foi realizada uma **otimização de hiperparâmetros** através do algoritmo **Random SearchCV**, buscando obter os melhores hiperparâmetros e a máxima performance do Random forest Regressor.
 
